@@ -5,5 +5,60 @@
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #C1B5AD;
+  /* background-color: #C1B5AD; */
+}
+
+#map {
+  height: 100vh;
+  width: 100vw;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+}
+
+#navbar{
+  justify-content: space-between;
+  display: flex;
+  background-color: rgba(36, 29, 63, 0.2);
+}
+
+h1{
+  padding-left: 20px;
+}
+
+#main{
+  display: flex;
+}
+
+.flex-col{
+  display:flex;
+  flex-direction: column;
+}
+
+#user-input{
+  justify-content: space-between;
+}
+
+.dropdown{
+  align-self: center;
+}
+
+#infobar{
+  align-items: center;
+  width: 30vw;
+  background-color: rgb(28, 107, 153)
+}
+
+#selections{
+  background-color: rgb(95, 176, 223);
+
+}
+
+.dropdown-content{
+  display:none;
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+  align-self: center;
 }

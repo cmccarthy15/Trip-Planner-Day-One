@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Trip Planner</title>
-    <link rel="stylesheet" type="text/css" src="./style.css">
-    <script defer src="./bundle.js" ></script> <!-- use defer or put at end of body-->
+
+    <link rel="stylesheet" type="text/css" href="./style.css"></link>
+    <script src="./bundle.js" defer></script> <!-- use defer or put at end of body-->
   </head>
   <body>
-    <div id="map1"></div>
+      <nav id = 'navbar'>
+          <h1>Trip Planner</h1>
+          <div>
+            <button type='button'>Home</button>
+            <button type='button'>About</button>
+            <button type='button'>Contact</button>
+          </div>
+        </nav>
+      <div id='main'>
+        <div id='map'></div>
+        <div id='user-input' class='flex-col'>
+          <div id= 'infobar' class='flex-col'>
+              <div class= 'dropdown'>
+                <span>Hotel</span>
+                <div class='dropdown-content'>
+                  <p>This is content</p>
+                </div>
+              </div>
+              <div class= 'dropdown'>
+                <span>Restaurants</span>
+                <div class='dropdown-content'>
+                  <p>This is content</p>
+                </div>
+              </div>
+              <div class= 'dropdown'>
+                <span>Activities</span>
+                <div class='dropdown-content'>
+                  <p>This is content</p>
+                </div>
+              </div>
+            </div>
+            <div id= 'selections' class='flex-col'>
+              <div class='selection' id='hotels'>
+                <p>You chose the Holiday Inn</p>
+              </div>
+              <div class='selection' id='restaurants'>
+                <p>You're going to eat at Lolo's Seafood Shack</p>
+              </div>
+              <div class='selection' id='activities'>
+                <p>You're going to go to all of the museums</p>
+              </div>
+            </div>
+            <h3>Let's go!</h3>
+        </div>
+      </div>
   </body>
 </html>
