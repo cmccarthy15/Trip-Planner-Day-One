@@ -8,6 +8,39 @@ body {
   /* background-color: #C1B5AD; */
 }
 
+#buttons{
+  display: flex;
+}
+
+button {
+  border-radius: 12px;
+  align-self: center;
+  background-color: rgba(48, 48, 48, 0.93);
+  color: white;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: none;
+  border: none;
+  transition: all .5s ease-in;
+}
+
+button:hover{
+  background-color: rgba(0, 0, 0, 0.93);
+  transform: scale(1.2);
+}
+
+#logo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#icon{
+  height: 3.5em;
+  width: 3.5em;
+  z-index: 1;
+}
+
 #map {
   height: 100vh;
   width: 100vw;
@@ -22,9 +55,6 @@ body {
   background-color: rgba(36, 29, 63, 0.2);
 }
 
-h1{
-  padding-left: 20px;
-}
 
 #main{
   display: flex;
@@ -37,6 +67,8 @@ h1{
 
 #user-input{
   justify-content: space-between;
+  align-items: center;
+  width: 30vw;
 }
 
 .dropdown{
@@ -45,13 +77,17 @@ h1{
 
 #infobar{
   align-items: center;
-  width: 30vw;
   background-color: rgb(28, 107, 153)
 }
 
 #selections{
   background-color: rgb(95, 176, 223);
+}
 
+#infobar, #selections{
+  border-color: black;
+  border-radius: 5px;
+  flex-basis: 20em;
 }
 
 .dropdown-content{
