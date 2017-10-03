@@ -10,6 +10,8 @@ body {
 
 #buttons{
   display: flex;
+  width: 24vw;
+  justify-content: center;
 }
 
 button {
@@ -67,8 +69,9 @@ button:hover{
 
 #user-input{
   justify-content: space-between;
-  align-items: center;
+
   width: 30vw;
+  background-color: rgba(36, 29, 63, 0.2);
 }
 
 .dropdown{
@@ -76,18 +79,25 @@ button:hover{
 }
 
 #infobar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  background-color: rgb(28, 107, 153)
+  background-color: rgb(28, 107, 153);
 }
 
 #selections{
+  display:flex;
+  flex-direction: column;
   background-color: rgb(95, 176, 223);
 }
 
 #infobar, #selections{
-  border-color: black;
+  width: 20vw;
+  margin: 0 2vw;
+  margin-top: 1vw;
   border-radius: 5px;
-  flex-basis: 20em;
+  flex-basis: 30vh;
 }
 
 .dropdown-content{
